@@ -22,7 +22,7 @@ $(document).ready(function(){
   if (name === ""){
     $("input#name").addClass("is-invalid");
     $(".invalid-feedback").show();
-    $("#nomatches").hide();
+    $("#nomatches, #hulk, #batman, #spiderman").hide();
   }
 
 
