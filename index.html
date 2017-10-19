@@ -11,21 +11,24 @@
   <body>
     <div class="container">
       <h1 class="jumbotron">Superhero Dating Quiz</h1>
-      <select class="form-control" id="color">
-        <option>Red</option>
-        <option>Black</option>
-        <option>Green</option>
-      </select>
-      <select class="form-control" id="date">
-        <option>Smash things</option>
-        <option>Swing through the city</option>
-        <option>Fight crime on the streets</option>
-      </select>
-      <select class="form-control" id="hate">
-        <option>Clowns</option>
-        <option>Being angry</option>
-        <option>Newspapers</option>
-      </select>
+      <form id="quiz">
+        <select class="form-control" id="color">
+          <option value="red">Red</option>
+          <option value="black">Black</option>
+          <option value="green">Green</option>
+        </select>
+        <select class="form-control" id="date">
+          <option value="smash">Smash things</option>
+          <option value="swing">Swing through the city</option>
+          <option value="fight">Fight crime on the streets</option>
+        </select>
+        <select class="form-control" id="hate">
+          <option value="clowns" >Clowns</option>
+          <option value="angry" >Being angry</option>
+          <option value="newspaper" >Newspapers</option>
+        </select>
+        <button type="submit" id="submit" class="btn btn-primary">SUBMIT</button>
+      </form>
 
       <div class="row">
         <div class="col-md-4">
@@ -38,7 +41,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card" style="width: 20rem;" id="sloth">
+          <div class="card" style="width: 20rem;" id="spiderman">
             <img class="card-img-top" src="img/spiderman.jpeg" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Spiderman</h4>
@@ -47,7 +50,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card" style="width: 20rem;" id="sealion">
+          <div class="card" style="width: 20rem;" id="batman">
             <img class="card-img-top" src="img/batman.jpeg" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Batman</h4>
@@ -55,6 +58,7 @@
             </div>
           </div>
         </div>
+        <p id="nomatches">NO MATCHES</p>
       </div>
     </div>
 
