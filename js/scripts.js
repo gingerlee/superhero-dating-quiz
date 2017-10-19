@@ -4,8 +4,7 @@ $(document).ready(function(){
   var color = $("#color").val();
   var date = $("#date").val();
   var hate = $("#hate").val();
-
-
+  var name = $("#name").val();
 
   if (color === "green" && date === "smash" || color === "green" && hate === "angry" || date === "smash" && hate === "angry"){
     $("#hulk").show();
@@ -18,6 +17,12 @@ $(document).ready(function(){
     $("#spiderman, #hulk, #nomatches").hide();
   } else{
     $("#nomatches").show();
+  }
+
+  if (name === ""){
+    $("input#name").addClass("is-invalid");
+    $(".invalid-feedback").show();
+    $("#nomatches").hide();
   }
 
 

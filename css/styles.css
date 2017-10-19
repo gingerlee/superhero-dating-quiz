@@ -4,3 +4,7 @@
 #nomatches {
   display: none;
 }
+
+.invalid-feedback {
+  display: none;
+}

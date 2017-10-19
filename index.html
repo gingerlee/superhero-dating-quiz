@@ -12,16 +12,26 @@
     <div class="container">
       <h1 class="jumbotron">Superhero Dating Quiz</h1>
       <form id="quiz">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="name" class="form-control" id="name" placeholder="Your Name Here">
+          <div class="invalid-feedback">
+            Please provide a name.
+          </div>
+        </div>
+        <h5>Choose your favorite color:</h5>
         <select class="form-control" id="color">
           <option value="red">Red</option>
           <option value="black">Black</option>
           <option value="green">Green</option>
         </select>
+        <h5>Choose your ideal date activity:</h5>
         <select class="form-control" id="date">
           <option value="smash">Smash things</option>
           <option value="swing">Swing through the city</option>
           <option value="fight">Fight crime on the streets</option>
         </select>
+        <h5>Choose the thing you hate the most:</h5>
         <select class="form-control" id="hate">
           <option value="clowns" >Clowns</option>
           <option value="angry" >Being angry</option>
